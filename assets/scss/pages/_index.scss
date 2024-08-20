@@ -1,3 +1,92 @@
 .index-title {
   font-size: 100px;
 }
+
+.content{
+  width: calc(100% - 296px);
+  margin-left: auto;
+}
+
+.nav-top{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.assign-title{
+  color: #212529;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+  padding-right: 3rem;
+}
+
+.all-courses-btn{
+  display: flex;
+  line-height: 24px;
+  font-size: 16px;
+  height: 24px;
+  font-weight: 700;
+  color: #212529;
+  border: none;
+  background: none;
+}
+
+
+.nav-right{
+  display: flex;
+  margin-left: auto;
+}
+
+.right{
+  margin: 0 -12px;
+  padding: 0 12px;
+}
+
+.course-left{
+  width: 33.333%;
+}
+
+.card-header-title{
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #F8F9FA;
+}
+
+.time{
+  font-size: 12px;
+}
+
+.line{
+  margin-bottom: -16px;
+}
+
+.course-right{
+  width: 66.666%;
+}
+
+.text-des{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.textarea-title{
+  width: 100%;
+  background: #F8F9FA;
+  border-bottom: 1px solid #CED4DA;
+  padding: 24px;
+}
+
+.textarea{
+  border: unset;
+  resize: none;
+  width: 100%;
+  min-height: 220px;
+  height: inherit;
+  padding: 24px;
+}
+
+.btn-text{
+  padding: 8px,32px;
+}

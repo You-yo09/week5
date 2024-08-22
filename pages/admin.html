@@ -51,11 +51,13 @@
                 <td class="py-3">zaina.goldsmith@mail.com</td>
                 <td class="py-3">Yes</td>
                 <td class="text-right">
-                   <!-- Button trigger modal -->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  <span class="material-symbols-outlined align-bottom me-4">visibility</span>
-                  <span class="material-symbols-outlined align-bottom me-2">edit</span>
-                  </button>
+
+                  <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="material-symbols-outlined align-bottom">visibility</span></button>
+                <button class="btn">
+                <span class="material-symbols-outlined align-bottom me-2">edit</span>
+                </button>
                 </td>
               </tr>
               <tr>
@@ -170,19 +172,19 @@
           </table>
         </div>
 
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-end">
+          <nav aria-label="Page">
+            <ul class="pagination justify-content-end me-4 mt-3">
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
-                  <span class="material-symbols-outlined text-success px-0 py-0">arrow_back_ios</span>
+                  <span class="material-symbols-outlined text-success align-bottom me-0">arrow_back_ios</span>
                 </a>
               </li>
-              <li class="page-item"><a class="page-link active bg-success btn-outline-success" href="#">1</a></li>
-              <li class="page-item"><a class="page-link text-success p-2" href="#">2</a></li>
-              <li class="page-item"><a class="page-link text-success p-2" href="#">3</a></li>
+              <li class="page-item"><a class="page-link bg-success text-light" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Next">
-                  <span class="material-symbols-outlined text-success">arrow_forward_ios</span>
+                  <span class="material-symbols-outlined text-success align-bottom">arrow_forward_ios</span>
                 </a>
               </li>
             </ul>
@@ -195,23 +197,93 @@
    
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ppp
-      </div>
-      <div class="modal-footer">
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-0 p-3">
+      
+      <div>
+      <div class="d-flex">
+        <div>
+          <img src="/assets/images/emir.jpeg" alt="emir" width="141" height="141">
+        </div>
+        <div class="modal-body position-relative">
+          <div class="d-flex justify-content-between">
+          <small>#1</small>
+          <button type="button" 
+          class="btn-close" 
+          data-bs-dismiss="modal" 
+          aria-label="Close">
+          </button>
+          </div>
+       
+          <p>Admin</p>
+          <h2 class="fs-5">Emir Wicks</h2>
+          <small class="text-secondary">emir.wicks@mail.com</small>
+
+          <div class="d-flex justify-content-between"
+             data-bs-toggle="collapse" 
+             href="#collapseExample" 
+             role="button" 
+             aria-expanded="false" 
+             aria-controls="collapseExample">
+             <p class="fs-6">Verified</p>
+             <span class="material-symbols-outlined align-bottom me-0 text-success" id="bottom">keyboard_arrow_down</span>
+            
+          </div>
+          <div class="collapse mt-3" id="collapseExample">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-outline-danger rounded-1 me-2"
+                    data-bs-dismiss="modal">Deactivate</button>
+                <button type="button" class="btn btn-success rounded-1">Edit</button>
+            </div>
+        </div>
+        </div>
+        
+      </div>   
+
+</div>
+</div>
+    </div>
+    </div>
+
+
+      <!--<div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="d-flex">
+                                <div class="avatar"
+                                    style="background:center / cover no-repeat url(../assets/images/emir.jpeg);">
+                                </div>
+                                <div class="personal d-flex">
+                                    <div class="myclose d-flex">
+                                        <p class="modal-title">#1</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <p>Admin</p>
+                                    <p class="name-title">Emir Wicks</p>
+                                    <p>emir.wicks@mail.com</p>
+                                    <div data-bs-toggle="collapse" data-bs-target="#collapseEx1" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <p>Verified<span class="material-symbols-outlined" id="bottom">keyboard_arrow_down</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 </body>
 
       <script type="module" src="../main.js"></script>
